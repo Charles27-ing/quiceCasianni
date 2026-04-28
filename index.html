@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 Años</title>
+
+    <!-- LibrerÃ­as Externas (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tu hoja de estilos personalizada -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Pantalla de Bienvenida -->
+    <div id="welcome-screen" class="section is-active"
+        style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <div class="welcome-content animate__animated animate__zoomIn">
+            <h1 class="welcome-title"
+                style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: #ffffffb0; text-shadow: -10px 7px 30px rgba(83,100,131 /95%); margin-bottom: 2rem;">
+                Hola soy Alejandra y quiero decirles Algo Especial</h1>
+            <button id="open-invitation-btn" class="welcome-btn"
+                style="background: rgba(255, 255, 255, 0.2); border: 2px solid white; border-radius: 50px; padding: 20px 60px; font-size: 1.5rem; color: white; cursor: pointer; backdrop-filter: blur(10px); transition: all 0.3s; position: relative; z-index: 200;">
+                <i class="fas fa-gift"></i> Continua...
+            </button>
+        </div>
+    </div>
+
+    <!-- Pantalla de Cuenta Regresiva Inicial (3, 2, 1 ) -->
+    <div id="initial-countdown-screen" class="section d-none">
+        <div class="card-countdown animate__animated">
+            <span id="countdown-number"></span>
+        </div>
+    </div>
+
+    <!-- Contenedor Principal de la InvitaciÃ³n (inicialmente oculto) -->
+    <main id="invitation-main" class="d-none">
+
+        <!-- SecciÃ³n 1: Portada -->
+        <section id="portada" class="section">
+            <div class="">
+                <h1 class="presentation-title animate__animated">Vamos a Festejar</h1>
+                <img src="img/0.jpeg" alt="Foto de la QuinceaÃ±era" class="presentation-photo animate__animated">
+                <div class="fifteen-number-container animate__animated">
+                    <h1 class="presentation-title animate__animated"> Mis</h1>
+                    <span class="number-15 masked-text">15 </span>
+                    <h1 class="presentation-title animate__animated"> Años</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Versiculo (Solo texto) -->
+        <section id="versiculo" class="section">
+            <div class="">
+                <h2 class="section-title animate__animated versiculo-title">
+                    Tú hiciste todo mi ser,
+                </h2>
+                <p class="section-title animate__animated versiculo-p1">
+                    tanto mis sentimientos como mi cuerpo, desde que me hiciste tomar forma en el vientre de mi madre.
+                </p>
+                <p class="section-title animate__animated versiculo-p2">
+                    Te agradezco porque me hiciste de una manera maravillosa; se muy bien que tus obras son
+                    maravillosas.
+                </p>
+                <p class="section-title animate__animated versiculo-p3">
+                    Tú sabes todo de mí.
+                    Tú viste mis huesos crecer; mientras mi cuerpo se formaba en el vientre de mi madre.
+
+
+                </p>
+            </div>
+
+        </section>
+        <!-- SecciÃ³n 3: Lugar y Fecha -->
+        <section id="lugar" class="section">
+            <div class="">
+                <div class="main-invite-text animate__animated">
+                    <h3 class="section-title animate__animated ">🎉 <strong id="nombre-familia" class=""></strong>,</h3>
+                    <p class="invitado-title section-title">Tenemos el gusto de invitarte a darle gloria a Dios por la
+                        vida de nuestra hija Alejandra</p>
+                    <h2 class="section-title animate__animated ">📅 Fecha</h2>
+                    <p class="mb-2"><strong> Sabado 23 de Mayo de 2026 a las 6:00 P. M.</strong></p>
+                    <h2 class="section-title animate__animated">📍 Lugar</h2>
+                    <p class=" invitado-title section-title">El Sabanal</p>
+                    <hr class="divider">
+                </div>
+            </div>
+        </section>
+
+        <!-- SecciÃ³n 4: Momentos (Carrusel 3D) -->
+        <section id="momentos" class="section">
+            <div class="">
+                <h2 class="section-title animate__animated momentos-title">Momentos Inolvidables</h2>
+
+                <div class="carousel-scene animate__animated animate__zoomIn">
+                    <div class="carousel" id="carousel">
+                        <!-- Los elementos del carrusel se insertan aqui mediante JavaScript -->
+                    </div>
+                </div>
+
+                <div class="indicators" id="indicators">
+                    <!-- Los indicadores se insertarÃ¡n aquÃ­ mediante JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SecciÃ³n 5: Cuenta Regresiva del Evento -->
+        <section id="evento" class="section">
+            <div class="">
+                <p class="cursive-text animate__animated evento-intro">Porque son parte de mi vida, es mi deseo que
+                    compartan conmigo este día tan especial.</p>
+                <h2 class="section-title animate__animated">Faltan</h2>
+                <div id="event-countdown" class="animate__animated">
+                    <div><span id="days">00</span> Días</div>
+                    <div><span id="hours">00</span> Horas</div>
+                    <div><span id="minutes">00</span> Minutos</div>
+                    <div><span id="seconds">00</span> Segundos</div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Seccion 7: Regalo -->
+        <section id="regalo" class="section">
+            <video autoplay loop muted playsinline
+                style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1; filter: brightness(0.4);">
+                <source src="img/Regalo.webm" type="video/webm">
+            </video>
+            <div class="content-wrapper">
+                <h3><span class="emoji-animated animate__zoomIn">🎁</span> <span
+                        class="section-title animate__animated"> Regalo</span></h3>
+                <h1 class="section-title animate__animated">Tu presencia es el mejor regalo</h1>
+                <div class="gift-text animate__animated"
+                    style="font-size: 1.2rem; line-height: 1.8; max-width: 600px; margin: 0 auto;">
+                    <h2 class="section-title animate__animated">Pero si deseas darme un presente, </h2>
+                    <h2 class="section-title animate__animated">Te dejamos esta opcion </h2>
+                    <h3 class="elegant-text"><span class="emoji-animated"></span> "Lluvia de sobres"</h3>
+
+                    <div class="card-hearts" aria-hidden="true">
+                        <span class="heart h1">💕</span>
+                        <span class="heart h2">💕</span>
+                        <span class="heart h3">💕</span>
+                    </div>
+
+                </div>
+                <div class="envelope-icon " aria-hidden="true">
+                    <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg" class="envelope-svg">
+                        <defs>
+                            <linearGradient id="envelopeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f4f0e8;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#4ccff0;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="10" y="20" width="80" height="50" fill="url(#envelopeGradient)" stroke="#8B4513"
+                            stroke-width="2" rx="3" />
+                        <path d="M10 20 L50 45 L90 20" fill="none" stroke="#8B4513" stroke-width="2" />
+                        <circle cx="50" cy="35" r="3" fill="#ff69b4" />
+                        <path d="M48 33 C48 31, 52 31, 52 33 C52 35, 50 37, 50 37 C50 37, 48 35, 48 33 Z"
+                            fill="#ff1493" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- SecciÃ³n 8: Confirmacion de Asistencia -->
+        <section id="confirmacion" class="section">
+            <div class="">
+                <h2 class="section-title animate__animated">Confirma tu asistencia</h2>
+                <div class="confirmation-text animate__animated"
+                    style="font-size: 1.1rem; line-height: 1.8; max-width: 600px; margin: 0 auto;">
+                    <p>Esperamos que puedas acompañarnos en este dí­a tan especial.</p>
+                    <div id="cupos-info"
+                        style="margin: -1.5rem 0; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px; backdrop-filter: blur(5px);">
+                        <p style="margin-bottom: 0.5rem; font-weight: bold;">Número de Cupos:</p>
+                        <p id="numero-cupos" style="margin: 0;"></p>
+                    </div>
+                    <a href="#" id="whatsapp-link" target="_blank" class="btn btn-primary btn-lg mt-3"
+                        style="background-color: #25D366; border: none; padding: 15px 30px; border-radius: 50px; text-decoration: none; color: white; font-weight: bold;">
+                        <i class="fab fa-whatsapp"></i> Confirmar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Controles de NavegaciÃ³n y MÃºsica -->
+    <div id="navigation-controls" class="d-none">
+        <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <button id="music-btn" class="d-none"><i class="fas fa-music"></i></button>
+
+    <!-- Elemento de Audio -->
+    <audio id="background-music" loop autoplay>
+        <source src="music/desierto.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- LibrerÃ­as Externas (JS ) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Tu script personalizado -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

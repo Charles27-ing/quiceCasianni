@@ -376,7 +376,7 @@
 
     // --- CONTEO REGRESIVO DEL EVENTO Y MUSICA ---
     // (Esta parte del codigo no ha cambiado)
-    const eventDate = new Date("Mayo 24, 2026 18:00:00").getTime();
+    const eventDate = new Date("May 24, 2026 18:00:00").getTime();
     setInterval(function () {
         const now = new Date().getTime();
         const distance = eventDate - now;
@@ -409,7 +409,7 @@
         const nombre = decodeURIComponent(getUrlParameter('familia') || 'Invitado');
         const enlace = window.location.href;
         const mensaje = `Oye¸ ¡Estás invitado a mis 15 Años! \n\nHola ${nombre}\n\nQueremos Compartir Contigo este momento tan especial. Por favor abre el Enlace:\n\n${enlace}\n\nPor favor, confirma tu asistencia en la invitación digital. ¡Te esperamos! \n\nCon cariño,\nAlejandra Kassiani`;
-        const urlWhatsapp = `https://wa.me/3137087635?text=${encodeURIComponent(mensaje)}`;
+        const urlWhatsapp = `https://wa.me/3225367676?text=${encodeURIComponent(mensaje)}`;
         whatsappLink.attr('href', urlWhatsapp);
     }
 });

@@ -24,39 +24,39 @@
     // --- LÃ“GICA DEL CARRUSEL 3D ---
     const items = [
         {
-            image: 'img/11.jpeg',
-            caption: 'Chiquitin'
+            image: 'img/una.jpeg',
+            caption: 'Recien Nacida'
         },
         {
-            image: 'img/23.jpeg',
-            caption: 'Pensativa'
+            image: 'img/dos.jpeg',
+            caption: 'Sonrisas'
         },
         {
-            image: 'img/1.jpeg',
-            caption: 'Maravilla'
+            image: 'img/tres.jpeg',
+            caption: 'Alegría'
         },
         {
-            image: 'img/25.jpeg',
-            caption: 'Mis 8 años'
+            image: 'img/cuatro.jpeg',
+            caption: 'En un momento especial'
         },
         {
-            image: 'img/222.jpeg',
+            image: 'img/cinco.jpeg',
             caption: 'Yo'
         },
         {
-            image: 'img/14.jpeg',
+            image: 'img/seis.jpeg',
             caption: 'Mis 14 años'
 
         },
         {
-            image: 'img/2.jpeg',
-            caption: 'De paseo'
+            image: 'img/siete.jpeg',
+            caption: 'Feliz'
 
         },
 
         {
-            image: 'img/555.jpeg',
-            caption: 'Feliz'
+            image: 'img/ocho.jpeg',
+            caption: 'Cartagena'
 
         },
 
@@ -218,7 +218,7 @@
             setTimeout(runInitialCountdown, 300);
         } else {
             // AnimaciÃ³n especial al terminar
-            $('#countdown-number').text('AcompaÃ±ame...').css('font-size', '12vw').parent().removeClass().addClass('card-countdown animate__animated animate__zoomIn');
+            $('#countdown-number').text('Acompañame...').css('font-size', '12vw').parent().removeClass().addClass('card-countdown animate__animated animate__zoomIn');
 
             setTimeout(() => {
                 $('#initial-countdown-screen').addClass('animate__animated animate__fadeOut');
@@ -376,7 +376,7 @@
 
     // --- CONTEO REGRESIVO DEL EVENTO Y MUSICA ---
     // (Esta parte del codigo no ha cambiado)
-    const eventDate = new Date("May 23, 2026 18:00:00").getTime();
+    const eventDate = new Date("Mayo 24, 2026 18:00:00").getTime();
     setInterval(function () {
         const now = new Date().getTime();
         const distance = eventDate - now;
@@ -408,8 +408,8 @@
         // Mensaje exacto solicitado para WhatsApp, con nombre e hiperlink actual
         const nombre = decodeURIComponent(getUrlParameter('familia') || 'Invitado');
         const enlace = window.location.href;
-        const mensaje = `Oye¸ ¡Estás invitado a mis 15 Años! \n\nHola ${nombre}\n\nQueremos Compartir Contigo este momento tan especial. Por favor abre el Enlace:\n\n${enlace}\n\nPor favor, confirma tu asistencia en la invitación digital. ¡Te esperamos! \n\nCon cariño,\nMichell calderon`;
-        const urlWhatsapp = `https://wa.me/3225367676?text=${encodeURIComponent(mensaje)}`;
+        const mensaje = `Oye¸ ¡Estás invitado a mis 15 Años! \n\nHola ${nombre}\n\nQueremos Compartir Contigo este momento tan especial. Por favor abre el Enlace:\n\n${enlace}\n\nPor favor, confirma tu asistencia en la invitación digital. ¡Te esperamos! \n\nCon cariño,\nAlejandra Kassiani`;
+        const urlWhatsapp = `https://wa.me/3137087635?text=${encodeURIComponent(mensaje)}`;
         whatsappLink.attr('href', urlWhatsapp);
     }
 });

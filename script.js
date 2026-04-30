@@ -350,17 +350,17 @@
         }
 
         const animations = [
-            { selector: '.presentation-title', animation: 'animate__fadeInDown', delay: '0.5s' },
-            { selector: '.presentation-photo', animation: 'animate__zoomIn', delay: '0.8s' },
-            { selector: '.fifteen-number-container', animation: 'animate__fadeInUp', delay: '1.2s' },
-            { selector: '.section-title', animation: 'animate__fadeInDown', delay: '0.5s' },
-            { selector: '.carousel-container', animation: 'animate__zoomIn', delay: '1s' },
-            { selector: '.cursive-text', animation: 'animate__fadeIn', delay: '0.5s' },
-            { selector: '#event-countdown', animation: 'animate__fadeInUp', delay: '1.5s' },
-            { selector: '.main-invite-text', animation: 'animate__zoomIn', delay: '0.5s' },
+            { selector: '.presentation-title', animation: 'animate__fadeInDown', delay: '02s' },
+            { selector: '.presentation-photo', animation: 'animate__zoomIn', delay: '0.4s' },
+            { selector: '.fifteen-number-container', animation: 'animate__fadeInUp', delay: '0.6s' },
+            { selector: '.section-title', animation: 'animate__fadeInDown', delay: '0.2s' },
+            { selector: '.carousel-container', animation: 'animate__zoomIn', delay: '0.6s' },
+            { selector: '.cursive-text', animation: 'animate__fadeIn', delay: '0.2s' },
+            { selector: '#event-countdown', animation: 'animate__fadeInUp', delay: '0.8s' },
+            { selector: '.main-invite-text', animation: 'animate__zoomIn', delay: '0.2s' },
             { selector: '.address-text', animation: 'animate__zoomIn', delay: '1s' },
-            { selector: '.gift-text', animation: 'animate__fadeIn', delay: '0.5s' },
-            { selector: '.confirmation-text', animation: 'animate__fadeIn', delay: '0.5s' }
+            { selector: '.gift-text', animation: 'animate__fadeIn', delay: '0.2s' },
+            { selector: '.confirmation-text', animation: 'animate__fadeIn', delay: '0.2s' }
         ];
 
         setTimeout(() => {
@@ -409,7 +409,7 @@
         const nombre = decodeURIComponent(getUrlParameter('familia') || 'Invitado');
         const enlace = window.location.href;
         const mensaje = `Oye¸ ¡Estás invitado a mis 15 Años! \n\nHola ${nombre}\n\nQueremos Compartir Contigo este momento tan especial. Por favor abre el Enlace:\n\n${enlace}\n\nPor favor, confirma tu asistencia en la invitación digital. ¡Te esperamos! \n\nCon cariño,\nAlejandra Kassiani`;
-        const urlWhatsapp = `https://wa.me/3225367676?text=${encodeURIComponent(mensaje)}`;
+        const urlWhatsapp = `https://wa.me/573225367676?text=${encodeURIComponent(mensaje)}`;
         whatsappLink.attr('href', urlWhatsapp);
     }
 });

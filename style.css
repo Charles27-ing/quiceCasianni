@@ -14,8 +14,8 @@
     --gold-300: #d9b46d;
     --paper: #fff7f8;
     --ink: #2a141b;
-    --page-turn-duration: 1500ms;
-    --page-turn-duration-ms: 1500;
+    --page-turn-duration: 900ms;
+    --page-turn-duration-ms: 900;
 }
 
 body {
